@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BusGo - Bus Ticket Booking</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <nav class="navbar">
+            <h2 class="logo">BusGo<span>.</span></h2>
+
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#buses">Buses</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <a href="#search" class="nav-button">Book Ticket</a>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="tagline">TRAVEL SMART. TRAVEL COMFORTABLY.</p>
+            <h1>Your Journey<br>Begins <span>Here.</span></h1>
+            <p>
+                Book bus tickets easily and enjoy a comfortable
+                journey to your favourite destinations.
+            </p>
+            <a href="#search" class="primary-button">Book Your Journey</a>
+        </div>
+    </section>
+
+    <!-- SEARCH SECTION -->
+    <section class="search-section" id="search">
+        <h2>Find Your Bus</h2>
+
+        <form id="searchForm">
+
+            <div class="form-group">
+                <label for="from">From</label>
+                <input type="text" id="from"
+                       placeholder="Departure city" required>
+            </div>
+
+            <div class="form-group">
+                <label for="to">To</label>
+                <input type="text" id="to"
+                       placeholder="Destination city" required>
+            </div>
+
+            <div class="form-group">
+                <label for="journeyDate">Journey Date</label>
+                <input type="date" id="journeyDate" required>
+            </div>
+
+            <div class="form-group">
+                <label for="passengers">Passengers</label>
+                <select id="passengers">
+                    <option value="1">1 Passenger</option>
+                    <option value="2">2 Passengers</option>
+                    <option value="3">3 Passengers</option>
+                    <option value="4">4 Passengers</option>
+                    <option value="5">5 Passengers</option>
+                </select>
+            </div>
+
+            <button type="submit">Search Buses</button>
+        </form>
+    </section>
+
+    <!-- BUS LIST -->
+    <section class="buses-section" id="buses">
+        <h2>Available Buses</h2>
+        <p>Choose your comfortable journey.</p>
+
+        <div class="bus-container" id="busContainer"></div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about-section" id="about">
+        <h2>About BusGo</h2>
+        <p>
+            BusGo makes travelling simple and convenient.
+            Find buses, choose your seats and book your tickets
+            in just a few easy steps.
+        </p>
+    </section>
+
+    <!-- CONTACT -->
+    <footer id="contact">
+        <h2>BusGo.</h2>
+        <p>Your journey, our responsibility.</p>
+        <p>Email: support@busgo.com</p>
+        <p>© 2026 BusGo. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
